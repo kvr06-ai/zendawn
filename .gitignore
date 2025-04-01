@@ -26,4 +26,10 @@ Thumbs.db
 *.sublime-project
 *.sublime-workspace
 *.swp
-*.swo 
+*.swo
+
+# Documentation files
+seo_guidelines.md
+site_structure_seo.md
+*.md
+!README.md 

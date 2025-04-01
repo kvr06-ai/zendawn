@@ -1,7 +1,7 @@
 {
-  "name": "health-wellness-blog",
+  "name": "zendawn-india-travel",
   "version": "1.0.0",
-  "description": "Health and Wellness Blog",
+  "description": "Mindful Travel Blog for India",
   "main": "index.js",
   "scripts": {
     "start": "live-server src"

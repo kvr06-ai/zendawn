@@ -3,19 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibrant Living | Health & Wellness Blog</title>
-    <meta name="description" content="Discover holistic wellness tips, nutritious recipes, fitness guides, and mindfulness practices for a balanced lifestyle.">
+    <title>ZenDawn | Mindful Travel in India</title>
+    <meta name="description" content="Discover India's hidden gems with ZenDawn - your guide to mindful travel experiences across North, South, East and West India with authentic local insights.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Structured Data for Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ZenDawn",
+      "url": "https://zendawn.me",
+      "logo": "https://zendawn.me/images/logo.png",
+      "sameAs": [
+        "https://www.instagram.com/zendawn",
+        "https://pinterest.com/zendawn",
+        "https://facebook.com/zendawn"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-555-555-5555",
+        "contactType": "customer service",
+        "email": "contact@zendawn.me"
+      }
+    }
+    </script>
+    <!-- Structured Data for WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "ZenDawn",
+      "url": "https://zendawn.me",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://zendawn.me/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 </head>
 <body>
     <header>
         <nav class="main-nav">
             <div class="container">
-                <a href="index.html" class="logo">Vibrant Living</a>
+                <a href="index.html" class="logo">ZenDawn</a>
                 <div class="menu-toggle">
                     <span></span>
                     <span></span>
@@ -23,23 +58,65 @@
                 </div>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="#">Nutrition</a></li>
-                    <li><a href="#">Fitness</a></li>
-                    <li><a href="#">Mental Health</a></li>
-                    <li><a href="#">Recipes</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="destinations-india/north-india.html">North India</a></li>
+                    <li><a href="destinations-india/south-india.html">South India</a></li>
+                    <li><a href="destinations-india/east-india.html">East India</a></li>
+                    <li><a href="destinations-india/west-india.html">West India</a></li>
+                    <li><a href="travel-styles/index.html">Travel Styles</a></li>
+                    <li><a href="about/index.html">About Us</a></li>
                 </ul>
             </div>
         </nav>
 
+        <!-- Breadcrumbs navigation -->
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+
         <div class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Your Journey to <span class="highlight">Holistic Wellness</span> Starts Here</h1>
-                    <p>Evidence-based advice to help you live a healthier, more balanced life.</p>
+                    <h1>Journey Through <span class="highlight">Incredible India</span> With Mindfulness</h1>
+                    <p>Authentic travel experiences and mindful adventures across India's diverse landscapes and cultures.</p>
                     <div class="cta-buttons">
-                        <a href="#featured" class="btn btn-primary">Explore Articles</a>
-                        <a href="#newsletter" class="btn btn-secondary">Subscribe</a>
+                        <a href="#featured" class="btn btn-primary">Explore Destinations</a>
+                        <a href="#newsletter" class="btn btn-secondary">Get Travel Updates</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Indicators -->
+        <div class="trust-indicators">
+            <div class="container">
+                <div class="indicators-grid">
+                    <div class="indicator">
+                        <div class="indicator-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <p>Local experiences</p>
+                    </div>
+                    <div class="indicator">
+                        <div class="indicator-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <p>Written by local experts</p>
+                    </div>
+                    <div class="indicator">
+                        <div class="indicator-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <p>Sustainable travel focus</p>
+                    </div>
+                    <div class="indicator">
+                        <div class="indicator-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <p>Regularly updated</p>
                     </div>
                 </div>
             </div>
@@ -49,63 +126,84 @@
     <section id="featured" class="featured-posts">
         <div class="container">
             <div class="section-header">
-                <h2>Featured Articles</h2>
-                <p>Our most impactful wellness guides</p>
+                <h2>Featured Destinations</h2>
+                <p>Our most captivating travel experiences in India</p>
             </div>
             <div class="post-grid">
                 <article class="post-card featured">
                     <div class="post-thumbnail">
-                        <div class="category-tag">Nutrition</div>
+                        <div class="category-tag">North India</div>
                         <div class="thumbnail-gradient"></div>
                     </div>
                     <div class="post-content">
-                        <span class="post-date">May 15, 2025</span>
-                        <h3>The Ultimate Guide to Plant-Based Protein Sources</h3>
-                        <p>Discover nutrient-rich alternatives to animal proteins that can fuel your body and support muscle growth.</p>
+                        <span class="post-date">May 15, 2023</span>
+                        <h3>A Spiritual Journey Through Varanasi's Ancient Ghats</h3>
+                        <p>Experience the soul of India along the sacred Ganges River. Discover dawn boat rides, evening ceremonies, and the spiritual essence of one of the world's oldest continuously inhabited cities.</p>
+                        <div class="author-info">
+                            <img src="images/avatar-placeholder.jpg" alt="Vikram Sharma" class="author-avatar">
+                            <div>
+                                <span class="author-name">Vikram Sharma</span>
+                                <span class="author-title">Local Guide & Photographer</span>
+                            </div>
+                        </div>
                         <div class="post-footer">
                             <div class="post-tags">
-                                <span class="tag">Protein</span>
-                                <span class="tag">Plant-Based</span>
+                                <span class="tag">Spiritual</span>
+                                <span class="tag">Heritage</span>
                             </div>
-                            <a href="#" class="read-more">Read Article</a>
+                            <a href="destinations-india/varanasi-ghats.html" class="read-more">Read Article</a>
                         </div>
                     </div>
                 </article>
                 
                 <article class="post-card">
                     <div class="post-thumbnail" style="background-color: #4caf50;">
-                        <div class="category-tag">Fitness</div>
+                        <div class="category-tag">South India</div>
                         <div class="thumbnail-gradient"></div>
                     </div>
                     <div class="post-content">
-                        <span class="post-date">May 10, 2025</span>
-                        <h3>15-Minute Morning Yoga Routine for Energy</h3>
-                        <p>Start your day with this simple yet effective yoga sequence designed to boost your energy levels.</p>
+                        <span class="post-date">May 10, 2023</span>
+                        <h3>Kerala Backwaters: A Serene Houseboat Experience</h3>
+                        <p>Float through the tranquil palm-fringed canals of Kerala on a traditional houseboat. Learn about the unique ecosystem and village life along these peaceful waterways.</p>
+                        <div class="author-info">
+                            <img src="images/avatar-placeholder.jpg" alt="Ananya Menon" class="author-avatar">
+                            <div>
+                                <span class="author-name">Ananya Menon</span>
+                                <span class="author-title">Travel Writer & Kerala Native</span>
+                            </div>
+                        </div>
                         <div class="post-footer">
                             <div class="post-tags">
-                                <span class="tag">Yoga</span>
-                                <span class="tag">Energy</span>
+                                <span class="tag">Waterways</span>
+                                <span class="tag">Relaxation</span>
                             </div>
-                            <a href="#" class="read-more">Read Article</a>
+                            <a href="destinations-india/kerala-backwaters.html" class="read-more">Read Article</a>
                         </div>
                     </div>
                 </article>
                 
                 <article class="post-card">
                     <div class="post-thumbnail" style="background-color: #2196f3;">
-                        <div class="category-tag">Mental Health</div>
+                        <div class="category-tag">West India</div>
                         <div class="thumbnail-gradient"></div>
                     </div>
                     <div class="post-content">
-                        <span class="post-date">May 5, 2025</span>
-                        <h3>Mindfulness Techniques for Stress Reduction</h3>
-                        <p>Learn practical mindfulness methods to manage stress and improve your mental well-being.</p>
+                        <span class="post-date">May 5, 2023</span>
+                        <h3>Mindful Desert Experiences in Rajasthan</h3>
+                        <p>Discover peaceful solitude in the golden sands of Thar Desert. From meditation under star-filled skies to authentic village visits, experience Rajasthan beyond the palaces.</p>
+                        <div class="author-info">
+                            <img src="images/avatar-placeholder.jpg" alt="Ranbir Singh" class="author-avatar">
+                            <div>
+                                <span class="author-name">Ranbir Singh</span>
+                                <span class="author-title">Desert Guide</span>
+                            </div>
+                        </div>
                         <div class="post-footer">
                             <div class="post-tags">
-                                <span class="tag">Mindfulness</span>
-                                <span class="tag">Stress</span>
+                                <span class="tag">Desert</span>
+                                <span class="tag">Cultural</span>
                             </div>
-                            <a href="#" class="read-more">Read Article</a>
+                            <a href="destinations-india/rajasthan-desert.html" class="read-more">Read Article</a>
                         </div>
                     </div>
                 </article>
@@ -116,37 +214,44 @@
     <section class="wellness-categories">
         <div class="container">
             <div class="section-header">
-                <h2>Explore Wellness Categories</h2>
-                <p>Find the perfect resources for your wellness journey</p>
+                <h2>Explore Travel Categories</h2>
+                <p>Find the perfect journey for your Indian adventure</p>
             </div>
             <div class="categories-grid">
-                <a href="#" class="category-card">
+                <a href="destinations-india/north-india.html" class="category-card">
                     <div class="category-icon" style="background-color: #4caf50;">
-                        <i class="fas fa-seedling"></i>
+                        <i class="fas fa-mountain"></i>
                     </div>
-                    <h3>Nutrition</h3>
-                    <p>Balanced eating for optimal health</p>
+                    <h3>North India</h3>
+                    <p>Himalayan treks, spiritual pilgrimages, and vibrant culture</p>
                 </a>
-                <a href="#" class="category-card">
+                <a href="destinations-india/south-india.html" class="category-card">
                     <div class="category-icon" style="background-color: #f44336;">
-                        <i class="fas fa-heartbeat"></i>
+                        <i class="fas fa-umbrella-beach"></i>
                     </div>
-                    <h3>Fitness</h3>
-                    <p>Workouts for strength and endurance</p>
+                    <h3>South India</h3>
+                    <p>Tranquil backwaters, ancient temples, and tropical beaches</p>
                 </a>
-                <a href="#" class="category-card">
+                <a href="destinations-india/east-india.html" class="category-card">
                     <div class="category-icon" style="background-color: #2196f3;">
-                        <i class="fas fa-brain"></i>
+                        <i class="fas fa-tree"></i>
                     </div>
-                    <h3>Mental Health</h3>
-                    <p>Support for emotional wellbeing</p>
+                    <h3>East India</h3>
+                    <p>Tea plantations, tribal villages, and unspoiled nature</p>
                 </a>
-                <a href="#" class="category-card">
-                    <div class="category-icon" style="background-color: #ff9800;">
-                        <i class="fas fa-utensils"></i>
+                <a href="destinations-india/west-india.html" class="category-card">
+                    <div class="category-icon" style="background-color: #673ab7;">
+                        <i class="fas fa-landmark"></i>
                     </div>
-                    <h3>Recipes</h3>
-                    <p>Nutritious and delicious meals</p>
+                    <h3>West India</h3>
+                    <p>Desert landscapes, royal palaces, and coastal getaways</p>
+                </a>
+                <a href="travel-styles/index.html" class="category-card">
+                    <div class="category-icon" style="background-color: #ff9800;">
+                        <i class="fas fa-bicycle"></i>
+                    </div>
+                    <h3>Travel Styles</h3>
+                    <p>Explore India through different travel styles</p>
                 </a>
             </div>
         </div>
@@ -156,24 +261,31 @@
         <div class="container">
             <div class="section-header">
                 <h2>Latest Articles</h2>
-                <p>Fresh wellness content to inspire you</p>
+                <p>Fresh wellness content backed by science</p>
             </div>
             <div class="post-grid">
                 <article class="post-card">
                     <div class="post-thumbnail" style="background-color: #ff9800;">
-                        <div class="category-tag">Recipes</div>
+                        <div class="category-tag">Lifestyle</div>
                         <div class="thumbnail-gradient"></div>
                     </div>
                     <div class="post-content">
                         <span class="post-date">May 1, 2025</span>
                         <h3>5 Nutrient-Dense Breakfast Bowls Under 300 Calories</h3>
-                        <p>Start your day with these delicious, quick-to-make breakfast options that keep you energized.</p>
+                        <p>Start your day with these delicious, quick-to-make breakfast options that keep you energized. Each recipe includes complete nutritional information and scientific rationale.</p>
+                        <div class="author-info">
+                            <img src="images/avatar-placeholder.jpg" alt="Maria Rodriguez" class="author-avatar">
+                            <div>
+                                <span class="author-name">Maria Rodriguez, RD</span>
+                                <span class="author-title">Registered Dietitian</span>
+                            </div>
+                        </div>
                         <div class="post-footer">
                             <div class="post-tags">
                                 <span class="tag">Breakfast</span>
                                 <span class="tag">Low-Calorie</span>
                             </div>
-                            <a href="#" class="read-more">Read Article</a>
+                            <a href="lifestyle/nutrient-dense-breakfast-bowls.html" class="read-more">Read Article</a>
                         </div>
                     </div>
                 </article>
@@ -186,13 +298,20 @@
                     <div class="post-content">
                         <span class="post-date">April 28, 2025</span>
                         <h3>Understanding Gut Health: The Key to Overall Wellness</h3>
-                        <p>How your gut microbiome affects everything from digestion to mental health, and how to improve it.</p>
+                        <p>How your gut microbiome affects everything from digestion to mental health, and evidence-based strategies to improve it, referencing recent studies and clinical research.</p>
+                        <div class="author-info">
+                            <img src="images/avatar-placeholder.jpg" alt="Dr. James Wilson" class="author-avatar">
+                            <div>
+                                <span class="author-name">Dr. James Wilson, MD</span>
+                                <span class="author-title">Gastroenterologist</span>
+                            </div>
+                        </div>
                         <div class="post-footer">
                             <div class="post-tags">
                                 <span class="tag">Gut Health</span>
                                 <span class="tag">Probiotics</span>
                             </div>
-                            <a href="#" class="read-more">Read Article</a>
+                            <a href="nutrition/gut-health-microbiome.html" class="read-more">Read Article</a>
                         </div>
                     </div>
                 </article>
@@ -205,19 +324,26 @@
                     <div class="post-content">
                         <span class="post-date">April 25, 2025</span>
                         <h3>The Benefits of Low-Impact Exercise for Joint Health</h3>
-                        <p>How gentler forms of exercise can build strength and flexibility while protecting your joints.</p>
+                        <p>How gentler forms of exercise can build strength and flexibility while protecting your joints, with references to orthopedic research and clinical guidelines.</p>
+                        <div class="author-info">
+                            <img src="images/avatar-placeholder.jpg" alt="Robert Taylor" class="author-avatar">
+                            <div>
+                                <span class="author-name">Robert Taylor, DPT</span>
+                                <span class="author-title">Physical Therapist</span>
+                            </div>
+                        </div>
                         <div class="post-footer">
                             <div class="post-tags">
                                 <span class="tag">Joint Health</span>
                                 <span class="tag">Low-Impact</span>
                             </div>
-                            <a href="#" class="read-more">Read Article</a>
+                            <a href="fitness/low-impact-exercise-joint-health.html" class="read-more">Read Article</a>
                         </div>
                     </div>
                 </article>
             </div>
             <div class="all-posts-link">
-                <a href="#" class="btn btn-outline">View All Articles</a>
+                <a href="articles.html" class="btn btn-outline">View All Articles</a>
             </div>
         </div>
     </section>
@@ -225,13 +351,13 @@
     <section id="newsletter" class="newsletter">
         <div class="container">
             <div class="newsletter-content">
-                <h2>Get Wellness Tips In Your Inbox</h2>
-                <p>Join our community and receive the latest articles, tips, and wellness resources directly to your inbox.</p>
+                <h2>Get Evidence-Based Wellness Tips In Your Inbox</h2>
+                <p>Join our community of wellness enthusiasts and receive the latest research-backed articles, tips, and resources directly to your inbox.</p>
                 <form class="newsletter-form">
                     <input type="email" placeholder="Your email address" required>
                     <button type="submit" class="btn btn-primary">Subscribe</button>
                 </form>
-                <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
+                <p class="form-note">We respect your privacy. Unsubscribe at any time. See our <a href="policies/privacy-policy.html">Privacy Policy</a>.</p>
             </div>
         </div>
     </section>
@@ -240,8 +366,8 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-info">
-                    <h3 class="footer-logo">Vibrant Living</h3>
-                    <p>Your trusted resource for evidence-based wellness information and practical health advice.</p>
+                    <h3 class="footer-logo">ZenDawn</h3>
+                    <p>Your trusted resource for evidence-based wellness information and practical health advice, backed by science and written by qualified experts.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-pinterest"></i></a>
@@ -253,34 +379,35 @@
                     <div class="link-group">
                         <h4>Categories</h4>
                         <ul>
-                            <li><a href="#">Nutrition</a></li>
-                            <li><a href="#">Fitness</a></li>
-                            <li><a href="#">Mental Health</a></li>
-                            <li><a href="#">Recipes</a></li>
+                            <li><a href="nutrition/index.html">Nutrition</a></li>
+                            <li><a href="fitness/index.html">Fitness</a></li>
+                            <li><a href="mental-wellbeing/index.html">Mental Wellbeing</a></li>
+                            <li><a href="sleep-health/index.html">Sleep Health</a></li>
+                            <li><a href="lifestyle/index.html">Lifestyle</a></li>
                         </ul>
                     </div>
                     <div class="link-group">
                         <h4>Company</h4>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Our Team</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><a href="about/index.html">About Us</a></li>
+                            <li><a href="about/our-team.html">Our Team</a></li>
+                            <li><a href="contact/index.html">Contact</a></li>
+                            <li><a href="about/editorial-guidelines.html">Editorial Guidelines</a></li>
                         </ul>
                     </div>
                     <div class="link-group">
                         <h4>Resources</h4>
                         <ul>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Advertise</a></li>
-                            <li><a href="#">Contributors</a></li>
+                            <li><a href="policies/privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="policies/terms-of-service.html">Terms of Use</a></li>
+                            <li><a href="policies/medical-disclaimer.html">Medical Disclaimer</a></li>
+                            <li><a href="contact/advertise.html">Advertise</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Vibrant Living. All rights reserved.</p>
+                <p>&copy; 2025 ZenDawn. All content on this site is informational and should not replace professional medical advice. Please consult healthcare providers for medical conditions.</p>
             </div>
         </div>
     </footer>

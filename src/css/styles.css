@@ -189,6 +189,46 @@ img {
     transition: var(--transition);
 }
 
+/* Breadcrumbs */
+.breadcrumbs {
+    background-color: var(--background-light);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.breadcrumbs ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs li {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    content: '›';
+    margin: 0 10px;
+    color: var(--text-light);
+}
+
+.breadcrumbs a {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    transition: var(--transition);
+}
+
+.breadcrumbs a:hover {
+    color: var(--primary-color);
+}
+
+.breadcrumbs li:last-child a {
+    color: var(--text-color);
+    font-weight: 500;
+    pointer-events: none;
+}
+
 /* Hero Section */
 .hero {
     background-color: var(--background-color);
@@ -225,6 +265,47 @@ img {
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+
+/* E-E-A-T Trust Indicators */
+.trust-indicators {
+    background-color: var(--background-light);
+    padding: 30px 0;
+    margin-bottom: 60px;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.indicators-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.indicator {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1 1 200px;
+}
+
+.indicator-icon {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(76, 175, 80, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.indicator p {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 0.9rem;
 }
 
 /* Post Cards */
@@ -316,6 +397,34 @@ img {
     margin-bottom: 1.5rem;
 }
 
+/* Author info styling */
+.author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 12px;
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-name {
+    display: block;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--text-color);
+}
+
+.author-title {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-light);
+}
+
 .post-footer {
     display: flex;
     justify-content: space-between;
@@ -359,7 +468,7 @@ img {
 
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 2rem;
 }
 
@@ -471,6 +580,15 @@ img {
     opacity: 0.7;
 }
 
+.form-note a {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-note a:hover {
+    opacity: 0.9;
+}
+
 /* Footer */
 footer {
     padding-top: 60px;
@@ -555,6 +673,9 @@ footer {
 .copyright p {
     color: var(--text-light);
     font-size: 0.85rem;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Responsive Styles */
@@ -565,6 +686,10 @@ footer {
     
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .indicators-grid {
+        justify-content: center;
     }
 }
 
@@ -623,6 +748,10 @@ footer {
     
     .newsletter-form {
         flex-direction: column;
+    }
+    
+    .indicator {
+        flex: 1 1 100%;
     }
 }
 
