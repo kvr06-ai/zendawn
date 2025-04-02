@@ -185,6 +185,13 @@
             border-radius: 4px;
             text-align: center;
         }
+        
+        /* Comment box specific styles */
+        .commentbox {
+            min-height: 300px;
+            margin-top: 20px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -565,7 +572,8 @@
                     
                     <div class="comment-section">
                         <h4>Comments</h4>
-                        <div class="commentbox"></div>
+                        <p>Share your thoughts and experiences with other travelers. Your comments will appear below after submitting.</p>
+                        <div class="commentbox" id="commentbox"></div>
                     </div>
                 </section>
             </article>
@@ -645,6 +653,26 @@
     <script src="../../js/script.js"></script>
     
     <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-    <script>commentBox('ZenDawn')</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                // Initialize CommentBox with specific parameters
+                commentBox('ZenDawn', {
+                    backgroundColor: '#f9f9f9',
+                    textColor: '#333',
+                    subtextColor: '#666',
+                    timeout: 10000,
+                    // Target the specific element by ID
+                    className: 'commentbox',
+                    defaultBoxId: 'commentbox'
+                });
+                console.log('CommentBox initialized successfully');
+            } catch (error) {
+                console.error('CommentBox initialization error:', error);
+                // Display fallback message if CommentBox fails to load
+                document.getElementById('commentbox').innerHTML = '<p>Comments temporarily unavailable. Please check back later.</p>';
+            }
+        });
+    </script>
 </body>
 </html> 
