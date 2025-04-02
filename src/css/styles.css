@@ -1142,8 +1142,8 @@ footer {
 }
 
 #mc_embed_signup input[type="email"] {
-    width: 90% !important;
-    max-width: 500px !important;
+    width: 100% !important;
+    max-width: 600px !important;
     font-size: 1.1rem !important;
     padding: 18px 25px !important;
     border: 2px solid rgba(255, 255, 255, 0.4) !important;
@@ -1160,6 +1160,21 @@ footer {
 #mc_embed_signup input[type="email"]::placeholder {
     color: rgba(255, 255, 255, 0.9) !important;
     font-size: 1.1rem !important;
+}
+
+/* Added spacing for privacy note */
+.privacy-note-container {
+    margin-top: 40px;
+}
+
+.form-note {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.form-note a {
+    color: white;
+    text-decoration: underline;
 }
 
 #mc_embed_signup .clear {
