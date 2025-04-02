@@ -32,4 +32,7 @@ Thumbs.db
 seo_guidelines.md
 site_structure_seo.md
 *.md
-!README.md 
+!README.md
+
+# Sample design files
+sample\ design/ 

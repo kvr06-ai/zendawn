@@ -1,7 +1,7 @@
 {
-  "name": "zendawn-india-travel",
+  "name": "zendawn-travel",
   "version": "1.0.0",
-  "description": "Mindful Travel Blog for India",
+  "description": "Mindful Travel Blog",
   "main": "index.js",
   "scripts": {
     "start": "live-server src"
