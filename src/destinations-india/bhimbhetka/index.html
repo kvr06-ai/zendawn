@@ -669,7 +669,32 @@
             const commentForm = document.querySelector('.comment-form');
             const existingComments = document.querySelector('.existing-comments');
             const noCommentsMessage = document.querySelector('.no-comments');
-            let commentCount = 0;
+            
+            // Load comments from localStorage
+            let comments = JSON.parse(localStorage.getItem('bhimbetkaComments')) || [];
+            let commentCount = comments.length;
+            
+            // Display existing comments if any
+            if (commentCount > 0) {
+                if (noCommentsMessage) {
+                    noCommentsMessage.remove();
+                }
+                
+                existingComments.querySelector('h4').textContent = `Comments (${commentCount})`;
+                
+                comments.forEach(comment => {
+                    const commentElement = document.createElement('div');
+                    commentElement.className = 'comment';
+                    commentElement.innerHTML = `
+                        <div class="comment-header">
+                            <h5>${comment.name}</h5>
+                            <span class="comment-date">${comment.date}</span>
+                        </div>
+                        <p>${comment.text}</p>
+                    `;
+                    existingComments.appendChild(commentElement);
+                });
+            }
             
             commentForm.addEventListener('submit', function(e) {
                 e.preventDefault();
@@ -681,13 +706,27 @@
                 
                 if (!name || !commentText) return;
                 
+                // Create new comment data
+                const newComment = {
+                    name: name,
+                    email: email,
+                    text: commentText,
+                    date: new Date().toLocaleDateString()
+                };
+                
+                // Add to comments array
+                comments.push(newComment);
+                
+                // Save to localStorage
+                localStorage.setItem('bhimbetkaComments', JSON.stringify(comments));
+                
                 // Create comment element
                 const commentElement = document.createElement('div');
                 commentElement.className = 'comment';
                 commentElement.innerHTML = `
                     <div class="comment-header">
                         <h5>${name}</h5>
-                        <span class="comment-date">${new Date().toLocaleDateString()}</span>
+                        <span class="comment-date">${newComment.date}</span>
                     </div>
                     <p>${commentText}</p>
                 `;
