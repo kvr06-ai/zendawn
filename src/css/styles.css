@@ -1138,6 +1138,8 @@ footer {
     flex-wrap: wrap !important;
     align-items: center !important;
     justify-content: center !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
 }
 
 #mc_embed_signup .mc-field-group {
@@ -1147,31 +1149,29 @@ footer {
     margin-bottom: 0 !important;
     margin-right: 10px !important;
     flex: 1 !important;
-    max-width: 600px !important;
 }
 
 #mc_embed_signup input[type="email"] {
     width: 100% !important;
     font-size: 1.1rem !important;
     padding: 18px 25px !important;
-    border: 2px solid rgba(255, 255, 255, 0.4) !important;
+    border: none !important;
     border-radius: 40px !important;
     font-family: var(--body-font) !important;
-    background-color: rgba(255, 255, 255, 0.2) !important;
-    color: white !important;
-    backdrop-filter: blur(5px) !important;
-    -webkit-backdrop-filter: blur(5px) !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+    background-color: white !important;
+    color: #333 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
     height: 60px !important;
 }
 
 #mc_embed_signup input[type="email"]::placeholder {
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: #999 !important;
     font-size: 1.1rem !important;
 }
 
 .button-container {
     flex: 0 0 auto !important;
+    margin-left: -10px !important;
 }
 
 /* Added spacing for privacy note */
@@ -1215,6 +1215,7 @@ footer {
     margin-top: 0 !important;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
     white-space: nowrap !important;
+    z-index: 1 !important;
 }
 
 #mc_embed_signup .button:hover, 
@@ -1273,15 +1274,16 @@ footer {
         padding: 16px 20px !important;
     }
     
+    .button-container {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+    
     #mc_embed_signup .button, 
     #mc_embed_signup #mc-embedded-subscribe {
         width: 100% !important;
         height: 55px !important;
         font-size: 1.1rem !important;
         padding: 16px 20px !important;
-    }
-    
-    .button-container {
-        width: 100% !important;
     }
 } 
