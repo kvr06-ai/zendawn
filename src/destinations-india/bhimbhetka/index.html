@@ -665,7 +665,11 @@
                         subtextColor: '#666',
                         timeout: 15000, // Increased timeout for better loading chance
                         className: 'commentbox',
-                        defaultBoxId: 'commentbox'
+                        defaultBoxId: 'commentbox',
+                        // Allow anonymous comments by default
+                        anonymous: true,
+                        // Make email optional
+                        emailRequired: false
                     });
                     console.log('CommentBox initialized successfully');
                 } catch (error) {
