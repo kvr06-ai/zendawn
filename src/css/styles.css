@@ -767,22 +767,19 @@ footer {
 
 /* Add styles for the Coming Soon section */
 .coming-soon-container {
-    background-color: #f8f9fa;
+    background-color: #f9f9f9;
     border-radius: 8px;
-    padding: 3rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    margin: 2rem 0;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .coming-soon-message {
-    max-width: 800px;
-    margin: 0 auto;
+    text-align: center;
 }
 
 .coming-soon-message h3 {
     font-size: 1.8rem;
-    color: var(--primary-color);
+    color: #2a4734;
     margin-bottom: 1.5rem;
 }
 
@@ -794,13 +791,35 @@ footer {
 
 .coming-soon-badge {
     display: inline-block;
-    background-color: var(--secondary-color);
+    background-color: #5a9367;
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 30px;
     font-weight: 500;
     font-size: 1rem;
     margin-top: 1rem;
+}
+
+@media (min-width: 900px) {
+    .featured-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .featured-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .featured-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .featured-content p {
+        flex: 1;
+    }
 }
 
 /* Contact Section Styles */
@@ -1300,4 +1319,121 @@ footer {
     max-width: 700px;
     margin: 0 auto;
     position: relative;
+}
+
+/* Import destination article specific styles */
+@import './destination-article.css';
+
+/* Featured posts styling */
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.featured-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.featured-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.featured-card:hover .featured-image img {
+    transform: scale(1.05);
+}
+
+.featured-content {
+    padding: 25px;
+}
+
+.featured-content .category {
+    display: inline-block;
+    background-color: #5a9367;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+.featured-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin: 0 0 15px;
+    color: #2a4734;
+}
+
+.featured-content p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.featured-content .read-more {
+    display: inline-block;
+    color: #5a9367;
+    font-weight: 600;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #5a9367;
+    transition: all 0.2s ease;
+}
+
+.featured-content .read-more:hover {
+    color: #2a4734;
+    border-bottom-color: #2a4734;
+}
+
+/* Update coming-soon-container to work with the grid */
+.coming-soon-container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.coming-soon-message {
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    .featured-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .featured-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .featured-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .featured-content p {
+        flex: 1;
+    }
 } 

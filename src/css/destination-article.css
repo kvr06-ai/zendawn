@@ -1,0 +1,291 @@
+/* Destination Article Enhanced Styling */
+
+.destination-content {
+    padding: 60px 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    color: #333;
+}
+
+.blog-post {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.05);
+    padding: 40px;
+}
+
+/* Introduction styling */
+.post-intro {
+    font-size: 1.25rem;
+    line-height: 1.9;
+    color: #444;
+    border-left: 4px solid #5a9367;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* Section styling */
+.post-section {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.post-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #2a4734;
+    position: relative;
+    display: inline-block;
+}
+
+.post-section h2:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #5a9367;
+}
+
+.post-section h3 {
+    font-size: 1.5rem;
+    margin: 30px 0 15px;
+    color: #3a5d46;
+}
+
+.post-section p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+/* List styling */
+.post-section ul {
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+.post-section ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.post-section ul li:before {
+    content: "•";
+    color: #5a9367;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Image styling */
+.post-image {
+    margin: 30px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.post-image img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.post-image:hover img {
+    transform: scale(1.02);
+}
+
+.post-image figcaption {
+    background-color: #f9f9f9;
+    padding: 15px;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #666;
+    border-bottom: 2px solid #5a9367;
+}
+
+/* Callout boxes for important information */
+.callout-box {
+    background-color: #f7fcf8;
+    border-left: 4px solid #5a9367;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.callout-box h4 {
+    margin-top: 0;
+    color: #3a5d46;
+}
+
+/* Quote styling */
+.destination-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-style: italic;
+    color: #3a5d46;
+    padding: 30px 40px;
+    margin: 30px 0;
+    position: relative;
+    background-color: #f7fcf8;
+    border-radius: 8px;
+}
+
+.destination-quote:before {
+    content: "\201C";  /* Unicode for opening double quote */
+    font-size: 5rem;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    color: rgba(90, 147, 103, 0.2);
+}
+
+/* Location badge */
+.location-badge {
+    display: inline-block;
+    background-color: #2a4734;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.location-badge i {
+    margin-right: 5px;
+}
+
+/* Reader engagement section */
+.reader-engagement {
+    background-color: #f7fcf8;
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 3px solid #5a9367;
+    margin-top: 50px;
+}
+
+.reader-engagement h3 {
+    color: #2a4734;
+    margin-top: 0;
+}
+
+/* Link styling */
+.post-section a {
+    color: #3a5d46;
+    text-decoration: none;
+    border-bottom: 1px solid #5a9367;
+    transition: all 0.2s ease;
+}
+
+.post-section a:hover {
+    color: #5a9367;
+    border-bottom-color: #3a5d46;
+}
+
+/* Table styling for information */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.info-table th, .info-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-table th {
+    background-color: #5a9367;
+    color: white;
+    font-weight: 500;
+}
+
+.info-table tr:last-child td {
+    border-bottom: none;
+}
+
+.info-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blog-post {
+        padding: 20px;
+    }
+    
+    .post-intro {
+        font-size: 1.1rem;
+    }
+    
+    .post-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .post-section h3 {
+        font-size: 1.3rem;
+    }
+    
+    .destination-quote {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+}
+
+/* Horizontal card for nearby attractions */
+.attraction-card {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.attraction-card-image {
+    flex: 0 0 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.attraction-card-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.attraction-card-content h4 {
+    margin-top: 0;
+    color: #3a5d46;
+}
+
+.attraction-card-content p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.attraction-card-content .distance {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .attraction-card {
+        flex-direction: column;
+    }
+    
+    .attraction-card-image {
+        height: 150px;
+        flex-basis: auto;
+    }
+} 
