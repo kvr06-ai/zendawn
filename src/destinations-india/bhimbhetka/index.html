@@ -91,6 +91,100 @@
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
         }
+        
+        /* Comment section styles */
+        .comment-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e9e9e9;
+        }
+        
+        .comment-form {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        
+        .comment-form h4 {
+            color: #3a5d46;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+        }
+        
+        .existing-comments {
+            margin-top: 30px;
+        }
+        
+        .existing-comments h4 {
+            color: #3a5d46;
+            margin-bottom: 20px;
+        }
+        
+        .no-comments {
+            color: #777;
+            font-style: italic;
+        }
+        
+        .comment {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+            margin-bottom: 15px;
+        }
+        
+        .comment:last-child {
+            border-bottom: none;
+        }
+        
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .comment-header h5 {
+            margin: 0;
+            color: #3a5d46;
+            font-weight: 600;
+        }
+        
+        .comment-date {
+            color: #999;
+            font-size: 0.85rem;
+        }
+        
+        .thank-you {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #dff0d8;
+            color: #3c763d;
+            border-radius: 4px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -468,6 +562,31 @@
                             Have you visited Bhimbetka or are you planning to? What other prehistoric sites around the world have you found most impressive? I'd love to hear your thoughts and experiences in the comments below!
                         </p>
                     </div>
+                    
+                    <div class="comment-section">
+                        <form class="comment-form">
+                            <h4>Leave a Comment</h4>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email (optional)</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Your comment</label>
+                                <textarea id="comment" name="comment" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Comment</button>
+                        </form>
+                        
+                        <div class="existing-comments">
+                            <h4>Comments (0)</h4>
+                            <!-- Comments will be displayed here -->
+                            <p class="no-comments">Be the first to share your experience!</p>
+                        </div>
+                    </div>
                 </section>
             </article>
         </div>
@@ -544,5 +663,58 @@
     </footer>
 
     <script src="../../js/script.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const commentForm = document.querySelector('.comment-form');
+            const existingComments = document.querySelector('.existing-comments');
+            const noCommentsMessage = document.querySelector('.no-comments');
+            let commentCount = 0;
+            
+            commentForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const commentText = document.getElementById('comment').value;
+                
+                if (!name || !commentText) return;
+                
+                // Create comment element
+                const commentElement = document.createElement('div');
+                commentElement.className = 'comment';
+                commentElement.innerHTML = `
+                    <div class="comment-header">
+                        <h5>${name}</h5>
+                        <span class="comment-date">${new Date().toLocaleDateString()}</span>
+                    </div>
+                    <p>${commentText}</p>
+                `;
+                
+                // Add comment to page
+                if (noCommentsMessage) {
+                    noCommentsMessage.remove();
+                }
+                
+                existingComments.appendChild(commentElement);
+                commentCount++;
+                existingComments.querySelector('h4').textContent = `Comments (${commentCount})`;
+                
+                // Reset form
+                commentForm.reset();
+                
+                // Show thank you message
+                const thankYou = document.createElement('div');
+                thankYou.className = 'thank-you';
+                thankYou.textContent = 'Thank you for your comment!';
+                commentForm.appendChild(thankYou);
+                
+                setTimeout(() => {
+                    thankYou.remove();
+                }, 3000);
+            });
+        });
+    </script>
 </body>
 </html> 
