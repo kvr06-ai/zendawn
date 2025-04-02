@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Mailchimp Form Styles -->
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
     <!-- Structured Data for Organization -->
     <script type="application/ld+json">
     {
@@ -133,10 +135,30 @@
             <div class="newsletter-content">
                 <h2>Get Travel Inspiration</h2>
                 <p>Subscribe to receive my latest travel stories, destination guides, and practical tips.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
+                
+                <!-- Mailchimp Form -->
+                <div id="mc_embed_signup">
+                    <form action="https://zendawn.us1.list-manage.com/subscribe/post?u=e049465e8b73afd18e1a7cc6e&amp;id=abc58a8a1d&amp;f_id=006876e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter-form validate" target="_blank">
+                        <div id="mc_embed_signup_scroll">
+                            <div class="mc-field-group">
+                                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email address" required>
+                            </div>
+                            <div id="mce-responses" class="clear foot">
+                                <div class="response" id="mce-error-response" style="display: none;"></div>
+                                <div class="response" id="mce-success-response" style="display: none;"></div>
+                            </div>
+                            <!-- Real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_e049465e8b73afd18e1a7cc6e_abc58a8a1d" tabindex="-1" value="">
+                            </div>
+                            <div class="clear foot">
+                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary" value="Subscribe">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- End Mailchimp Form -->
+                
                 <p class="form-note">I respect your privacy. Unsubscribe at any time. See my <a href="about/privacy-policy.html">Privacy Policy</a>.</p>
             </div>
         </div>

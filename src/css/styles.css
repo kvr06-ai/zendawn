@@ -1115,4 +1115,94 @@ footer {
     .faq-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Mailchimp Form Styling */
+#mc_embed_signup {
+    background: transparent !important;
+    font-family: var(--body-font) !important;
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+    clear: none;
+}
+
+#mc_embed_signup form {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#mc_embed_signup .mc-field-group {
+    width: 100% !important;
+    min-height: auto !important;
+    padding-bottom: 0 !important;
+}
+
+#mc_embed_signup input[type="email"] {
+    width: 70% !important;
+    font-size: 1rem !important;
+    padding: 12px 15px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    font-family: var(--body-font) !important;
+    margin-right: 10px !important;
+}
+
+#mc_embed_signup .button, 
+#mc_embed_signup #mc-embedded-subscribe {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    font-family: var(--body-font) !important;
+    font-size: 1rem !important;
+    border-radius: 4px !important;
+    padding: 12px 20px !important;
+    height: auto !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    transition: background-color 0.3s ease !important;
+    border: none !important;
+    width: auto !important;
+    min-width: 120px !important;
+}
+
+#mc_embed_signup .button:hover, 
+#mc_embed_signup #mc-embedded-subscribe:hover {
+    background-color: var(--secondary-color) !important;
+}
+
+#mc_embed_signup div.response {
+    width: 100% !important;
+    margin: 10px 0 !important;
+    padding: 10px !important;
+    font-weight: normal !important;
+    font-size: 0.9rem !important;
+    border-radius: 4px !important;
+}
+
+#mc_embed_signup #mce-success-response {
+    background-color: rgba(108, 194, 131, 0.1) !important;
+    color: #6cc283 !important;
+}
+
+#mc_embed_signup #mce-error-response {
+    background-color: rgba(234, 91, 88, 0.1) !important;
+    color: #ea5b58 !important;
+}
+
+#mc_embed_signup .mc-field-group label {
+    display: none; /* Hide label to match previous design */
+}
+
+/* For mobile displays */
+@media (max-width: 768px) {
+    #mc_embed_signup input[type="email"] {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+        margin-right: 0 !important;
+    }
+    
+    #mc_embed_signup .button, 
+    #mc_embed_signup #mc-embedded-subscribe {
+        width: 100% !important;
+    }
 } 

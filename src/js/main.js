@@ -58,20 +58,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Newsletter form submission
-const newsletterForm = document.querySelector('.newsletter-form');
-if (newsletterForm) {
-    newsletterForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const emailInput = this.querySelector('input[type="email"]');
-        const email = emailInput.value.trim();
-        
-        if (email) {
-            // In a real implementation, you would send this to your backend
-            alert('Thank you for subscribing! You will receive travel stories and destination guides soon.');
-            emailInput.value = '';
-        }
-    });
-}
+// The form is now handled by Mailchimp - removing the previous JavaScript
+// This comment remains to document the change from client-side to Mailchimp handling
 
 // Animate elements on scroll
 const animateOnScroll = () => {
