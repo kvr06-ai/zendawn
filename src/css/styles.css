@@ -1136,57 +1136,82 @@ footer {
     width: 100% !important;
     min-height: auto !important;
     padding-bottom: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 25px !important;
 }
 
 #mc_embed_signup input[type="email"] {
-    width: 70% !important;
-    font-size: 1rem !important;
-    padding: 12px 15px !important;
-    border: 1px solid #ddd !important;
-    border-radius: 4px !important;
+    width: 90% !important;
+    max-width: 500px !important;
+    font-size: 1.1rem !important;
+    padding: 18px 25px !important;
+    border: 2px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 40px !important;
     font-family: var(--body-font) !important;
-    margin-right: 10px !important;
+    margin-right: 0 !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    backdrop-filter: blur(5px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+#mc_embed_signup input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 1.1rem !important;
+}
+
+#mc_embed_signup .clear {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
 }
 
 #mc_embed_signup .button, 
 #mc_embed_signup #mc-embedded-subscribe {
-    background-color: var(--primary-color) !important;
+    background-color: #F7A046 !important; /* Orange color that contrasts with green */
     color: white !important;
     font-family: var(--body-font) !important;
-    font-size: 1rem !important;
-    border-radius: 4px !important;
-    padding: 12px 20px !important;
+    font-size: 1.15rem !important;
+    border-radius: 40px !important;
+    padding: 18px 40px !important;
     height: auto !important;
     font-weight: 600 !important;
     letter-spacing: 0.5px !important;
-    transition: background-color 0.3s ease !important;
+    transition: all 0.3s ease !important;
     border: none !important;
     width: auto !important;
-    min-width: 120px !important;
+    min-width: 200px !important;
+    margin-top: 15px !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
 }
 
 #mc_embed_signup .button:hover, 
 #mc_embed_signup #mc-embedded-subscribe:hover {
-    background-color: var(--secondary-color) !important;
+    background-color: #E88B20 !important; /* Darker orange for hover state */
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25) !important;
 }
 
 #mc_embed_signup div.response {
     width: 100% !important;
-    margin: 10px 0 !important;
-    padding: 10px !important;
+    margin: 15px 0 !important;
+    padding: 12px !important;
     font-weight: normal !important;
     font-size: 0.9rem !important;
-    border-radius: 4px !important;
+    border-radius: 8px !important;
+    text-align: center !important;
 }
 
 #mc_embed_signup #mce-success-response {
-    background-color: rgba(108, 194, 131, 0.1) !important;
-    color: #6cc283 !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: white !important;
 }
 
 #mc_embed_signup #mce-error-response {
-    background-color: rgba(234, 91, 88, 0.1) !important;
-    color: #ea5b58 !important;
+    background-color: rgba(234, 91, 88, 0.2) !important;
+    color: white !important;
 }
 
 #mc_embed_signup .mc-field-group label {
@@ -1196,13 +1221,16 @@ footer {
 /* For mobile displays */
 @media (max-width: 768px) {
     #mc_embed_signup input[type="email"] {
-        width: 100% !important;
-        margin-bottom: 10px !important;
-        margin-right: 0 !important;
+        width: 90% !important;
+        max-width: none !important;
+        font-size: 1rem !important;
+        padding: 16px 20px !important;
     }
     
     #mc_embed_signup .button, 
     #mc_embed_signup #mc-embedded-subscribe {
-        width: 100% !important;
+        width: 90% !important;
+        font-size: 1.1rem !important;
+        padding: 16px 20px !important;
     }
 } 
