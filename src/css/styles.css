@@ -1175,6 +1175,13 @@ footer {
 .form-note a {
     color: white;
     text-decoration: underline;
+    transition: all 0.2s ease;
+}
+
+.form-note a:hover {
+    opacity: 1;
+    text-decoration: none;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 #mc_embed_signup .clear {
