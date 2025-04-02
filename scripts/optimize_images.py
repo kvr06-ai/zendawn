@@ -26,7 +26,7 @@ from PIL import Image, ImageOps
 DEFAULT_QUALITY = 85
 DEFAULT_MAX_WIDTH = 1200
 SOURCE_DIR = 'src/destinations-india'
-TARGET_DIR = 'src/images'
+TARGET_DIR = 'src/optimized-images'
 
 def parse_args():
     """Parse command line arguments."""
