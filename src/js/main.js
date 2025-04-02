@@ -67,7 +67,7 @@ if (newsletterForm) {
         
         if (email) {
             // In a real implementation, you would send this to your backend
-            alert('Thank you for subscribing! You will receive our wellness tips soon.');
+            alert('Thank you for subscribing! You will receive travel stories and destination guides soon.');
             emailInput.value = '';
         }
     });
